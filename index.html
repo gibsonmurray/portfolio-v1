@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Gibson Murray</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+
+        <div class="section" id="cover">
+            <div id="title-container">
+                <h1 id="title">Gibson Murray</h1>
+            </div>
+            <div id="position-container">
+                <h2 id="position">Software Engineer & Front-End Developer</h2>
+            </div>
+        </div>
+
+        <div class="section" id="about-me">
+            <div id="about-container">
+                <h1  id="about-title" class="moving-title" data-direction="forwards">ABOUT ME</h1>
+                <p class="general-p">
+                    Hi! I'm a student at the University of Maryland, College
+                    Park studying <strong>Computer Science.</strong><br /><br />
+                    I have a passion for design and how programs perform on both
+                    the <strong>front-end and back-end.</strong><br /><br />
+                    Most of my schoolwork revolves around back-end applications,
+                    compilers, and data organization while my personal front-end
+                    and design developments are on codepens!<br /><br />
+                    <strong>Here are some notable projects...</strong>
+                </p>
+            </div>
+        </div>
+
+        <div class="left-side">
+            <div class="padding0">
+                <h2 class="proj-num text"></h2>
+            </div>
+            <div class="proj-info-container">
+                <div class="proj-info">
+                    <div class="padding1">
+                        <h1 class="proj-title text"></h1>
+                    </div>
+                    <div class="padding2">
+                        <p class="proj-subtitle text"></p>
+                    </div>
+                    <p class="proj-description text"></p>
+                </div>
+            </div>
+            <div class="button-container">
+                <a class="source-code" target="_blank" rel="noopener noreferrer"></a>
+            </div>
+        </div>
+
+        <div class="right-side">
+
+            <!-- PROJECT 01 -->
+            <div class="images">
+                <img id="microcaml-desktop" class="parallax" src="./assets/desktop-microcaml.svg" alt="MicroCaml Desktop">
+                <div id="microcaml-laptop" class="parallax" data-rate="-1">
+                    <img id="microcaml-laptop-img" src="./assets/laptop.svg" alt="MicroCaml Laptop">
+                    <img id="mutop-gif" src="./assets/mutop.gif" alt="Mutop GIF">
+                </div>
+            </div>
+
+            <!-- PROJECT 02 -->
+            <div class="images">
+                <div id="c-desktop" class="parallax">
+                    <img id="c-desktop-img" src="./assets/desktop.svg" alt="C Desktop">
+                    <img id="c-img" src="./assets/c.png" alt="C PNG">
+                </div>
+                <div id="asm-laptop" class="parallax" data-rate="-1">
+                    <img id="asm-laptop-img" src="./assets/laptop.svg" alt="ASM Laptop">
+                    <img id="asm-gif" src="./assets/assembly.gif" alt="ASM GIF">
+                </div>
+            </div>
+
+            <!-- CODEPENS -->
+            <div class="images">
+                <div class="codepen parallax">
+                    <img id="box-gif" src="./assets/box-codepen.gif" alt="Box Codepen">
+                </div>
+                <div class="codepen parallax" data-rate="-1">
+                    <img id="shapes-gif" src="./assets/shapes-codepen.gif" alt="Shapes Codepen">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section" id="skills">
+            <h1 id="skills-title" class="moving-title" data-direction="backwards">SKILLS</h1>
+            <table>
+                <tr>
+                    <td><p class="general-p skills-p">Java<br>C<br>JavaScript<br>OCaml<br>Haskell<br>Ruby</p></td>
+                    <td><p class="general-p skills-p">Git/GitHub<br>VSCode<br>Figma<br>VSCode<br>Eclipse<br>Photoshop</p></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section" id="contact">
+            <h1 id="contact-title" class="moving-title" data-direction="forwards">CONTACT</h1>
+            <div id="icons">
+                <a href="https://www.linkedin.com/in/gibsonmurray/" target="_blank" rel="noopener noreferrer">
+                    <img class="icon" id="linkedin-icon" src="./assets/linkedin.svg" alt="LinkedIn"></a>
+                <a href="https://github.com/gibsonmurray" target="_blank" rel="noopener noreferrer">
+                    <img class="icon" id="github-icon" src="./assets/github.svg" alt="GitHub"></a>
+                <a href="mailto:gibmurrays@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <img class="icon" id="email-icon" src="./assets/email.svg" alt="Email"></a>
+                <a href="https://www.instagram.com/gibson.murray/" target="_blank" rel="noopener noreferrer">
+                    <img class="icon" id="instagram-icon" src="./assets/instagram.svg" alt="Instagram"></a>
+            </div>
+        </div>
+
+    </body>
+</html>
