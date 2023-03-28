@@ -115,6 +115,6 @@ window.addEventListener('scroll', () => {
                                 + '<br>Most of these projects were prototypes for this site'
                                 + ' but I chose a different design.';
         button.href = 'https://codepen.io/gibsonmurray';
-        button.innerHTML = 'Codepen Profile';
+        button.innerHTML = 'View Profile';
     }
 });
