@@ -65,30 +65,6 @@ body {
     }
 }
 
-@media (min-width: 480px) {
-    #title {
-        font-size: 60px;
-    }
-    #position {
-        font-size: 16px;
-    }
-    #position-container {
-        top: 47%;
-    }
-}
-
-@media (min-width: 768px) {
-    #title {
-        font-size: 100px;
-    }
-    #position {
-        font-size: 28px;
-    }
-    #position-container {
-        top: 50%;
-    }
-}
-
 @media (min-width: 1024px) {
     #title {
         font-size: 140px;
@@ -136,7 +112,7 @@ body {
     width: 75vw;
 }
 
-@media (min-width: 360px) {
+@media (min-width: 390px) {
     #about-title {
         font-size: 80px;
         top: 10%;
@@ -149,30 +125,6 @@ body {
     }
 }
 
-@media (min-width: 480px) {
-    #about-title {
-        font-size: 100px;
-        left: -60%;
-    }
-
-    .general-p {
-        font-size: 20px;
-        line-height: 25px;
-    }
-}
-
-@media (min-width: 820px) {
-    #about-title {
-        font-size: 180px;
-        left: -70%;
-    }
-
-    .general-p {
-        font-size: 35px;
-        line-height: 45px;
-    }
-}
-
 @media (min-width: 1024px) {
     #about-title {
         font-size: 200px;
@@ -182,7 +134,7 @@ body {
 
     .general-p {
         font-size: 30px;
-        line-height: 45px;
+        line-height: 39px;
     }
 }
 
@@ -358,15 +310,6 @@ body {
     }
 }
 
-@media (min-width: 480px) {
-    .left-side {
-        min-width: 50vw;
-    }
-    .proj-info {
-        padding-left: 5%;
-    }
-}
-
 @media (min-width: 1024px) {
     .left-side {
         width: 50vw;
@@ -389,7 +332,7 @@ body {
         margin-bottom: 15px;
     }
     .proj-info-container {
-        padding: 5% 0% 24% 0%;
+        padding: 0% 0% 17% 0%;
     }
     .proj-info {
         padding: 5% 5% 5% 10%;
@@ -398,7 +341,7 @@ body {
         font-size: 70px;
     }
     .button-container {
-        margin-left: 5%;
+        margin-left: 10%;
         width: 150px;
     }
     .source-code {
@@ -631,13 +574,13 @@ body {
     }
     
     .codepen:nth-child(1) {
-        margin-top: 30%;
+        margin-top: 20%;
         height: 500px;
         width: 550px;
     }
 
     .codepen:nth-child(2) {
-        margin-top: 290%;
+        margin-top: 267%;
         margin-left: 45%;
         height: 280px;
         width: 350px;
