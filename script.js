@@ -35,8 +35,6 @@ if (query1024.matches) {
     t = 0.5;
 }
 
-console.log(t);
-
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         text.forEach(elmt => {
