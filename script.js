@@ -27,13 +27,8 @@ let t = 0.5;
 let rm = '14%';
 
 let query390 = window.matchMedia('(min-width: 390px)');
+let query820 = window.matchMedia('(min-width: 820px)');
 let query1024 = window.matchMedia('(min-width: 1024px)');
-if (query390.matches) {
-    // t = 0.7;
-}
-if (query1024.matches) {
-    t = 0.5;
-}
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -55,19 +50,24 @@ sections.forEach(s => {
 /* ----------- PARALLAX ANIMATION ON SCROLL ----------- */
 
 let multiplier = 1;
+let delay = 200;
 
 if (query390.matches) {
     multiplier = 2.3;
 }
+if (query390.matches || query820.matches) {
+    delay = 0;
+}
 if (query1024.matches) {
     multiplier = 1;
+    delay = 200;
 }
 
 window.addEventListener('scroll', () => {
     const target = document.querySelectorAll('.parallax');
     for (elmt of target) {
         if (isInViewportParallax(elmt.parentElement)) {
-            elmt.style.transition = 'transform 200ms ease-out';
+            elmt.style.transition = `transform ${delay}ms ease-out`;
             let pos = window.scrollY / 3 * (elmt.dataset.rate * multiplier);
             elmt.style.transform = `translate(0px, ${pos}px)`;
         }

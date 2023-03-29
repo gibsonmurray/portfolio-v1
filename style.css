@@ -112,7 +112,6 @@ body {
     color: rgb(238, 238, 238);
     font-weight: 500;
     margin: 0;
-    transition: transform 300ms ease-out;
 }
 
 .general-p {
@@ -131,6 +130,10 @@ body {
         left: -50%;
     }
 
+    .moving-title {
+        transition: transform 0ms ease-out;
+    }
+
     .general-p {
         font-size: 20px;
         line-height: 25px;
@@ -144,6 +147,10 @@ body {
         left: -35%;
     }
 
+    .moving-title {
+        transition: transform 0ms ease-out;
+    }
+
     .general-p {
         font-size: 25px;
         line-height: 32px;
@@ -155,6 +162,10 @@ body {
         font-size: 200px;
         top: 5%;
         left: -15%;
+    }
+
+    .moving-title {
+        transition: transform 300ms ease-out;
     }
 
     .general-p {
