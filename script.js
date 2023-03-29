@@ -23,6 +23,20 @@ const sections = document.querySelectorAll('.images');
 const text = document.querySelectorAll('.text');
 const sourceButton = document.querySelectorAll('.source-code');
 
+let t = 0.5;
+let rm = '14%';
+
+let query390 = window.matchMedia('(min-width: 390px)');
+let query1024 = window.matchMedia('(min-width: 1024px)');
+if (query390.matches) {
+    // t = 0.7;
+}
+if (query1024.matches) {
+    t = 0.5;
+}
+
+console.log(t);
+
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         text.forEach(elmt => {
@@ -33,7 +47,7 @@ const observer = new IntersectionObserver(entries => {
             btn.classList.toggle('btn-text-appear', entry.isIntersecting);
         });
     });
-}, { threshold: 0.5, rootMargin: '14%' }
+}, { threshold: t, rootMargin: rm }
 );
 
 sections.forEach(s => {
@@ -42,12 +56,21 @@ sections.forEach(s => {
 
 /* ----------- PARALLAX ANIMATION ON SCROLL ----------- */
 
+let multiplier = 1;
+
+if (query390.matches) {
+    multiplier = 2.3;
+}
+if (query1024.matches) {
+    multiplier = 1;
+}
+
 window.addEventListener('scroll', () => {
     const target = document.querySelectorAll('.parallax');
     for (elmt of target) {
         if (isInViewportParallax(elmt.parentElement)) {
             elmt.style.transition = 'transform 200ms ease-out';
-            let pos = window.scrollY / 3 * elmt.dataset.rate;
+            let pos = window.scrollY / 3 * (elmt.dataset.rate * multiplier);
             elmt.style.transform = `translate(0px, ${pos}px)`;
         }
     }
