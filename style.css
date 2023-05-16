@@ -460,6 +460,177 @@ body {
 
 /* ----------- PROJECT 01 IMAGES ----------- */
 
+.geolocator {
+    overflow: hidden;
+    position: absolute;
+    border-radius: 20%;
+}
+
+@media (min-width: 390px) {
+    #kd-tree {
+        height: 300px;
+        width: 300px;
+    }
+
+    #farthest-first {
+        height: 200px;
+        width: 304px;
+    }
+
+    .geolocator:nth-child(1) {
+        margin-top: 50%;
+        margin-left: 9%;
+        height: 300px;
+        width: 300px;
+    }
+
+    .geolocator:nth-child(2) {
+        margin-top: 250%;
+        margin-left: 30%;
+        height: 195px;
+        width: 304px;
+    }
+}
+
+@media (min-width: 820px) {
+    #kd-tree {
+        height: 400px;
+        width: 400px;
+    }
+
+    #farthest-first {
+        height: 280px;
+        width: 426px;
+    }
+
+    .geolocator:nth-child(1) {
+        margin-top: 30%;
+        height: 400px;
+        width: 400px;
+    }
+
+    .geolocator:nth-child(2) {
+        margin-top: 100%;
+        margin-left: 50%;
+        height: 275px;
+        width: 426px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #kd-tree {
+        height: 400px;
+        width: 400px;
+    }
+
+    #farthest-first {
+        height: 280px;
+        width: 426px;
+    }
+
+    .geolocator:nth-child(1) {
+        margin-top: 20%;
+        height: 400px;
+        width: 400px;
+    }
+
+    .geolocator:nth-child(2) {
+        margin-top: 150%;
+        margin-left: 40%;
+        height: 275px;
+        width: 426px;
+    }
+}
+
+/* ----------- PROJECT 02 IMAGES ----------- */
+.img-gen {
+    overflow: hidden;
+    position: absolute;
+    border-radius: 20%;
+}
+
+@media (min-width: 390px) {
+    #img-gen-gif {
+        margin-top: -5px;
+        height: 300px;
+        width: 300px;
+    }
+
+    #login-gif {
+        height: 200px;
+        width: 200px;
+    }
+
+    .img-gen:nth-child(1) {
+        margin-top: 100%;
+        margin-left: 9%;
+        height: 295px;
+        width: 300px;
+    }
+
+    .img-gen:nth-child(2) {
+        margin-top: 430%;
+        margin-left: 30%;
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media (min-width: 820px) {
+    #img-gen-gif {
+        margin-top: -5px;
+        height: 400px;
+        width: 400px;
+    }
+
+    #login-gif {
+        height: 280px;
+        width: 280px;
+    }
+
+    .img-gen:nth-child(1) {
+        margin-top: 40%;
+        margin-left: 20%;
+        height: 395px;
+        width: 400px;
+    }
+
+    .img-gen:nth-child(2) {
+        margin-top: 170%;
+        margin-left: 60%;
+        height: 280px;
+        width: 280px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #img-gen-gif {
+        margin-top: -5px;
+        height: 400px;
+        width: 400px;
+    }
+
+    #login-gif {
+        height: 280px;
+        width: 280px;
+    }
+
+    .img-gen:nth-child(1) {
+        margin-top: 20%;
+        height: 395px;
+        width: 400px;
+    }
+
+    .img-gen:nth-child(2) {
+        margin-top: 220%;
+        margin-left: 45%;
+        height: 280px;
+        width: 280px;
+    }
+}
+
+/* ----------- PROJECT 03 IMAGES ----------- */
+
 #microcaml-desktop,
 #microcaml-laptop-img,
 #microcaml-laptop,
@@ -480,7 +651,7 @@ body {
     }
 
     #microcaml-laptop {
-        margin-top: 560%;
+        margin-top: 540%;
         margin-left: 6%;
     }
 
@@ -498,12 +669,12 @@ body {
 @media (min-width: 820px) {
     #microcaml-desktop {
         height: 400px;
-        margin-top: 100%;
+        margin-top: 40%;
         margin-left: 10%;
     }
 
     #microcaml-laptop {
-        margin-top: 395%;
+        margin-top: 230%;
         margin-left: 33%;
     }
 
@@ -526,7 +697,7 @@ body {
     }
 
     #microcaml-laptop {
-        margin-top: 165%;
+        margin-top: 265%;
         margin-left: 3%;
     }
 
@@ -541,7 +712,7 @@ body {
     }
 }
 
-/* ----------- PROJECT 02 IMAGES ----------- */
+/* ----------- PROJECT 04 IMAGES ----------- */
 
 #c-desktop,
 #c-desktop-img,
@@ -573,7 +744,7 @@ body {
     }
 
     #asm-laptop {
-        margin-top: 690%;
+        margin-top: 600%;
         margin-left: 3%;
     }
 
@@ -591,7 +762,7 @@ body {
 @media (min-width: 820px) {
     #c-desktop {
         margin-top: 30%;
-        margin-left: 25%;
+        margin-left: 35%;
     }
 
     #c-desktop-img {
@@ -605,7 +776,8 @@ body {
     }
 
     #asm-laptop {
-        margin-top: 441%;
+        margin-top: 230%;
+        margin-left: 10%;
     }
 
     #asm-laptop-img {
@@ -621,7 +793,7 @@ body {
 
 @media (min-width: 1024px) {
     #c-desktop {
-        margin-top: 30%;
+        margin-top: 10%;
         margin-left: 25%;
     }
 
@@ -636,7 +808,7 @@ body {
     }
 
     #asm-laptop {
-        margin-top: 221%;
+        margin-top: 300%;
     }
 
     #asm-laptop-img {
@@ -677,7 +849,7 @@ body {
     }
 
     .codepen:nth-child(2) {
-        margin-top: 1030%;
+        margin-top: 730%;
         margin-left: 30%;
         height: 200px;
         width: 230px;
@@ -696,13 +868,13 @@ body {
     }
 
     .codepen:nth-child(1) {
-        margin-top: 20%;
+        margin-top: 40%;
         height: 500px;
         width: 550px;
     }
 
     .codepen:nth-child(2) {
-        margin-top: 577%;
+        margin-top: 250%;
         margin-left: 50%;
         height: 280px;
         width: 350px;
@@ -727,7 +899,7 @@ body {
     }
 
     .codepen:nth-child(2) {
-        margin-top: 267%;
+        margin-top: 380%;
         margin-left: 45%;
         height: 280px;
         width: 350px;
@@ -751,7 +923,7 @@ body {
     #skills-title {
         font-size: 80px;
         top: 50%;
-        left: 230%;
+        left: 300%;
     }
     table {
         margin-top: 60%;
@@ -764,7 +936,7 @@ body {
     #skills-title {
         font-size: 200px;
         top: 30%;
-        left: 250%;
+        left: 330%;
     }
     table {
         margin-top: 15%;
@@ -780,7 +952,7 @@ body {
     #skills-title {
         font-size: 200px;
         top: 55%;
-        left: 180%;
+        left: 240%;
     }
 
     table {
@@ -798,7 +970,7 @@ body {
     #skills-title {
         font-size: 200px;
         top: 50%;
-        left: 150%;
+        left: 190%;
     }
 
     table {
@@ -834,7 +1006,7 @@ body {
     #contact-title {
         font-size: 80px;
         top: 15%;
-        left: -330%;
+        left: -460%;
     }
 
     #icons {
@@ -851,7 +1023,7 @@ body {
     #contact-title {
         font-size: 180px;
         top: 10%;
-        left: -360%;
+        left: -470%;
     }
 
     #icons {
@@ -868,7 +1040,7 @@ body {
     #contact-title {
         font-size: 200px;
         top: 25%;
-        left: -220%;
+        left: -300%;
     }
 
     #icons {
@@ -885,7 +1057,7 @@ body {
     #contact-title {
         font-size: 200px;
         top: 25%;
-        left: -150%;
+        left: -210%;
     }
 
     #icons {
